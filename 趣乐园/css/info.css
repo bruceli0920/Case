@@ -1,0 +1,219 @@
+body {
+  background-color: #EEEEEE;
+}
+.banner {
+  width: 100%;
+  padding-bottom: 40px;
+}
+.banner img {
+  width: 100%;
+  height:100%;
+}
+.title {
+  background-color: white;
+  padding: 0 10px;
+  border-top: 1px solid #DDDDDD;
+  border-bottom: 1px solid #DDDDDD;
+  margin-bottom: 10px;
+}
+.title p {
+  line-height: 30px;
+}
+.title p:nth-child(2) {
+  font-size: 14px;
+  border-bottom: 1px solid #DDDDDD;
+}
+.title p:nth-child(3) {
+  line-height: 35px;
+  font-size: 14px;
+  line-height: 44px;
+}
+.title p:nth-child(3) span {
+  display: inline-block;
+  width: 15px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+.title p:nth-child(3) span:first-child {
+  background-image: url(../img/map.gif);
+  color: black;
+}
+.title p:nth-child(3) span:last-child {
+  width: 12px;
+  height: 16px;
+  margin-top: 15px;
+  background-image: url(../img/arrow.gif);
+  float: right;
+}
+.product {
+  background-color: white;
+  padding: 0 10px;
+  border-top: 1px solid #DDDDDD;
+  border-bottom: 1px solid #DDDDDD;
+  margin-bottom: 10px;
+}
+.product p:first-child {
+  font-size: 18px;
+  line-height: 50px;
+  border-bottom: 1px solid #DDDDDD;
+}
+.product p:nth-child(2),
+.product p:nth-child(3) {
+  line-height: 35px;
+}
+.product p:nth-child(2) span {
+  border-radius: 3px;
+  background-color: #007AFF;
+  color: white;
+  font-size: 12px;
+  float: right;
+  min-height: 14px;
+  display: block;
+  line-height: 14px;
+  margin-top: 5px;
+  padding: 3px;
+}
+.product p:nth-child(3) span:first-child {
+  color: #EC6D65;
+  font-family: "微软雅黑";
+}
+.product p:nth-child(3) del {
+  font-size: 12px;
+  margin: 0 6px;
+}
+.product p:nth-child(3) span:nth-child(3) {
+  color: white;
+  display: inline-block;
+  background-color: orange;
+  border-radius: 4px;
+  font-size: 12px;
+  height: 18px;
+  vertical-align: middle;
+  line-height: 18px;
+  padding: 0 3px;
+}
+.product p:nth-child(3) button {
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: #EC6D65;
+  float: right;
+  padding: 7px 10px;
+  outline: none;
+}
+.product p:last-child {
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  color: #EC6D65;
+}
+.product p:last-child span {
+  cursor: pointer;
+}
+.product dl {
+  margin: 20px 0;
+  display: none;
+}
+.product dl dt {
+  font-weight: bold;
+  line-height: 30px;
+  font-size: 16px;
+}
+.product dl dd {
+  font-size: 12px;
+  line-height: 24px;
+}
+.main {
+  background-color: white;
+  padding: 0 10px;
+  border-top: 1px solid #DDDDDD;
+  border-bottom: 1px solid #DDDDDD;
+  margin-bottom: 10px;
+}
+.main dl {
+  margin: 20px 0;
+}
+.main dl dt {
+  font-weight: bold;
+  line-height: 30px;
+  font-size: 16px;
+}
+.main dl dd {
+  font-size: 12px;
+  line-height: 24px;
+  color: #999;
+}
+.main ul {
+  width: 100%;
+}
+.main ul li img {
+  width: 100%;
+}
+.buy {
+  width: 100%;
+  min-height: 100px;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 3;
+  display: none;
+}
+.buyBox {
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  padding-bottom: 10px;
+  width: 100%;
+}
+.buyBox p {
+  line-height: 50px;
+  margin: 0 10px;
+}
+.buyBox p span {
+  float: right;
+  transform: rotate(44deg);
+  font-size: 30px;
+  font-weight: 900;
+}
+.buyBox form {
+  margin: 0 10px;
+}
+.buyBox form input:nth-child(1) {
+  font-size: 14px;
+  padding-left: 15px;
+  background-color: #DDDDDD;
+  border: 1px solid #666666;
+  margin-bottom: 10px;
+}
+.buyBox form input:nth-child(2) {
+  font-size: 14px;
+  margin-bottom: 10px;
+  border: 1px solid #666666;
+  background-color: #DDDDDD;
+  width: 54.5%;
+  display: inline-block;
+}
+.buyBox form button {
+  margin-bottom: 10px;
+  width: 35.5%;
+  background-color: #EC6D65;
+  outline: none;
+  border: none;
+  color: white;
+  float: right;
+}
+.buyBox form a {
+  display: block;
+  width: 100%;
+  line-height: 30px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  background-color: #EC6D65;
+  border: none;
+  color: white;
+  text-align: center;
+}

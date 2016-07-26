@@ -1,0 +1,62 @@
+body{
+	background:#eee;
+}
+.row{
+	margin:0;
+}
+.col-xs-12{
+	padding:0;
+}
+.col-xs-6{
+	padding:0;
+}
+.col-xs-4{
+	padding:0;
+}
+.col-xs-3{
+	padding:0;
+}
+.top{
+	position: relative;
+}
+.container-fluid a{
+	display: block;
+}
+.face{
+	width:70px;
+	height:70px;
+	position: absolute;
+	top:20px;
+	left: 10px;
+	border-radius: 35px;
+	background: url(../img/images/bubing.jpg) center center no-repeat;
+	background-size: cover;
+}
+.name{
+	position: absolute;
+	top:40px;
+	left: 90px;
+	color:#fff;
+}
+.list{
+	width:90%;
+	padding:0 10px;
+	margin:15px 5%;
+	height:50px;
+	background-color:#fff;
+	border:1px solid #999;
+	font-size: 15px;
+	line-height: 50px;
+	color:#666;
+}
+.list span{
+	/*display: inline-block;*/
+	min-width:20px;
+	padding-right:20px;
+	height:20px;
+	margin-top:15px;
+	float: right;
+	background: url(../img/arrow.gif) no-repeat right center;
+	background-size:20px;
+	line-height:20px;
+}

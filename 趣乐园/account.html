@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/account.css"/>
+		<script src="js/jquery-2.2.3.js"></script>
+	    <title>我的账户</title>
+	</head>
+	<body>
+		<div class="container-fluid main">
+			<div class="row balance">
+				<div class="col-xs-12">
+					<span>余额：</span>
+				</div>
+				<div class="col-xs-12">
+					0.00元
+				</div>
+				<div class="col-xs-12">
+					<span>可转出余额：0元</span>
+					<button class="btn btn-default apply">申请转出</button>
+				</div>
+				<div class="col-xs-12">
+					<span>可用乐币：0</span>
+				</div>
+			</div>
+			<div class="row nav">
+				<div class="col-xs-6">收支明细</div>
+				<div class="col-xs-6">申请记录</div>
+			</div>
+			<div class="dataBox">				
+				<div class="row navBox1">
+					<div class="col-xs-12">没有数据</div>
+				</div>
+				<div class="row navBox2">
+					<div class="col-xs-4">申请时间</div>
+					<div class="col-xs-4">申请金额(￥)</div>
+					<div class="col-xs-4">状态</div>
+					<div class="col-xs-12">没有数据</div>
+				</div>
+			</div>
+		</div>
+		<div class="fixed">
+			<form class="fixedBox container-fluid">
+				<p class="col-xs-12">请填写转出金额</p>
+				<input type="text" placeholder="当前可转出余额为0元" class="col-xs-12 form-control"/>
+				<input type="submit" class="col-xs-12 btn" value="提交申请" />
+			</form>
+		</div>
+		<script type="text/javascript">
+			$(".nav div:nth-child(1)").click(function(){
+				$(".nav div:nth-child(2)").css("border-bottom","1px solid #fff")
+				$(this).css("border-bottom","1px solid #ec6d65")
+				$(".navBox2").css("display","none");
+				$(".navBox1").css("display","block");
+			});
+			$(".nav div:nth-child(2)").click(function(){
+				$(".nav div:nth-child(1)").css("border-bottom","1px solid #fff")
+				$(this).css("border-bottom","1px solid #ec6d65")
+				$(".navBox1").css("display","none");
+				$(".navBox2").css("display","block");
+			});
+			$(".apply").click(function(){
+				$(".fixed").toggle();
+			})
+			$(".fixed").click(function(e){
+				if(e.target==this){
+					$(this).toggle();
+				}
+			})
+		</script>
+	</body>
+</html>

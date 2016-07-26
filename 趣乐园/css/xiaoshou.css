@@ -1,0 +1,84 @@
+body{
+	background:#eee;
+}
+header{
+	height: 36px;
+	border: 1px solid #CCCCCC;
+	margin-top: 10px;
+	background: #fff;
+	padding-left: 15px;
+	line-height: 36px;
+	color: #333333;
+	font-size: 18px;
+}
+.people{
+	/*border: 1px solid red;*/
+	padding-left: 30px;
+	padding-right: 15px;
+	margin-top: 10px;
+}
+.ppp{
+	
+}
+.people>div{
+	border: 1px solid #ccc;
+	height: 100px;
+	background: white;
+	/*margin-right: 30px;*/
+	overflow: hidden;
+	
+}
+.people>div:first-child{
+	margin-left: -15px;
+}
+.people>div:last-child{
+	margin-left:15px;
+}
+.people>div>span{
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: #33A1DB;
+	border-radius: 2px;
+	margin: 20px auto;
+	line-height: 20px;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;	
+}
+.people>div>p{
+	font-size: 16px;
+	color: #333;
+	text-align: center;
+	overflow: hidden;
+	
+}
+.people>div>p>sub{
+	display: inline-block;
+	color: #33A1DB;
+	font-size: 20px;	
+}
+.name{
+	height: 86px;
+	border: 1px solid #ccc;
+	background: #fff;
+	margin-top: 10px;
+}
+.name ul{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.name ul li{
+	height: 43px;	
+	border-bottom:1px solid #ccc ;
+	line-height: 43px;
+	font-size: 18px;
+	color: #333;
+	
+}
+.name ul li span{
+	float: right;
+}
+.name ul li:last-child{
+	border: none;
+}

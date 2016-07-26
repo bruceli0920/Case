@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的</title>
+		<link rel="stylesheet" type="text/css" href="css/mine.css"/>
+		<script src="js/jquery-2.2.3.js"></script>
+	</head>
+	<body>
+		<div class="row">
+			<div class="col-xs-12 top">
+				<div class="face"></div>
+				<a href="" class="ew">&nbsp;></a>
+			</div>
+		</div>
+		<ul class="row rowul">
+			<li class="col-xs-12"><a href="myerwei.html">我是代言人<span>&gt;</span></a></li>
+			<li class="col-xs-12"><a href="paylist.html">我的订单<span>&gt;</span></a></li>
+			<li class="col-xs-12"><a href="detepaper.html">我的优惠券<span>&gt;</span></a></li>
+			<li class="col-xs-12"><a href="account.html">我的账户<span>&gt;</span></a></li>
+			<li class="col-xs-12"><a href="playstore.html">玩乐商城<span>&gt;</span></a></li>
+			<li class="col-xs-12"><a class="toke">我要吐槽<span>&gt;</span></a></li>
+		</ul>
+		<div class="fixed">
+			<form class="fixedBox container-fluid">
+				<textarea placeholder="您想吐槽点什么？请输入..." class="col-xs-12 text1" style=" padding: 15px;"></textarea>
+				<input type="text" placeholder="怎么联系您？" class="col-xs-12 input1"/>
+				<button class="col-xs-6 btn">取消</button>
+				<button type="submit" class="col-xs-6 btn">提交</button>
+			</form>
+		</div>
+		<script>
+			$(".toke").click(function(){
+				$(".fixed").show();
+			})
+			$(".fixedBox").children("a").click(function(){
+				$(".fixed").toggle();
+			})
+			$(".fixed").click(function(e){
+				if(e.target==this){
+					$(".fixed").toggle();
+				}
+			})
+		</script>
+	</body>
+</html>

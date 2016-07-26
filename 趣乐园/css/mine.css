@@ -1,0 +1,110 @@
+body {
+	background: #eee;
+}
+.top {
+	height: 10em;
+	background: url(../img/images/qibing.jpg) no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.face {
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	margin-left: -35px;
+	border-radius: 35px;
+	background: url(../img/images/bubing.jpg) center center no-repeat;
+	background-size: cover;
+}
+
+.ew {
+	display: block;
+	width: 25px;
+	height: 25px;
+	padding-left: 25px;
+	font-size: 20px;
+	color: #fff;
+	line-height: 25px;
+	position: absolute;
+	margin-top: -12px;
+	right: 10%;
+	top: 50%;
+	background: url(../img/erwei.png) left center no-repeat;
+	background-size: 25px 25px;
+}
+
+.rowul {
+	margin-top: 20px;
+	border-top: 1px solid #ececec;
+	background: #fff;
+	padding: 0 5%;
+}
+
+.rowul li {
+	height: 50px;
+	border-bottom: 1px solid #ececec;
+	line-height: 50px;
+}
+
+.rowul li a {
+	display: block;
+	color: #666;
+	font-size: 18px;
+}
+
+.rowul li a span {
+	float: right;
+}
+.fixed {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	min-height: 600px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: none;
+	z-index: 3;
+}
+
+.fixedBox {
+	width: 90%;
+	height: 300px;
+	margin: 20px 5%;
+	background-color: #fff;
+	border-radius: 10px;
+}
+
+.text1 {
+	height: 150px;
+	margin: 15px 0;
+	margin-bottom: 0;
+	border-radius: 10px 10px 0 0;
+	resize: none;
+	outline: none;
+	font-size: 16px;
+	border: 1px solid #ccc;
+}
+
+.input1 {
+	height: 40px;
+	line-height: 40px;
+	margin: 15px 0;
+	border: 1px solid #ccc;
+	text-indent: 1em;
+}
+
+.btn {
+	display: block;
+	width: 46%;
+	background-color: #EC6D65;
+	color: white;
+	margin: 0 1%;
+	font-size: 18px;
+	line-height: 30px;
+}
+.btn:last-child{
+	float: right;
+}

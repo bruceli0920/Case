@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>乐园详情</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.css" />
+		<link rel="stylesheet" type="text/css" href="css/info.css" />
+	</head>
+
+	<body>
+		<div class="swiper-container banner">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="img/a87e34a.jpg" /></div>
+				<div class="swiper-slide"><img src="img/57a9404.jpg" /></div>
+				<div class="swiper-slide"><img src="img/a87e34a.jpg" /></div>
+				<div class="swiper-slide"><img src="img/060fe3b.jpg" /></div>
+				<div class="swiper-slide"><img src="img/5bdc16c.jpg" /></div>
+				<div class="swiper-slide"><img src="img/03b5b8f.jpg" /></div>
+				<div class="swiper-slide"><img src="img/9c3c6bd.jpg" /></div>
+				<div class="swiper-slide"><img src="img/cfbe473.jpg" /></div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<div class="title">
+			<p>韩国泡泡秀（朝阳店）</p>
+			<p>韩国泡泡秀馆为每一个走进绿洲的孩子送去：自然、安全、与欢乐；而当夜幕降临，每一个孩子都随身带走：勇气、爱心、与梦想。</p>
+			<p><span></span>北京市朝阳区阜通东大街6号院4号楼方恒购物中心2-17<span></span></p>
+		</div>
+		<div class="product">
+			<p>本店热门产品</p>
+			<p>韩国泡泡乐享30次卡<span>乐享卡</span></p>
+			<p><span>1700.00</span><del>2000.00元</del><span>30次</span><button class="btn">购买</button></p>
+			<dl>
+				<dt>商品属性:</dt>
+				<dd>韩国泡泡乐园门票</dd>
+			</dl>
+			<dl>
+				<dt>温馨提示:</dt>
+				<dd>不兑现，不找零</dd>
+				<dd>不再与其他优惠同享</dd>
+				<dd>如有其他需要，请您在消费时向商户咨询</dd>
+			</dl>
+			<p><span>查看详情</span></p>
+		</div>
+		<div class="main">
+			<dl>
+				<dt>商家介绍:</dt>
+				<dd>五彩的泡泡好像漫天繁星，每一个人都将置身奇妙世界，这会是小朋友们童年最美好的回忆。可以看的、可以触摸的、孩子最想要的，刺激孩子潜在的想象力。韩国泡泡秀馆给孩子提供最魔幻，最神奇的泡泡体验，专注打造一个以泡泡为主题的魔幻乐园。</dd>
+			</dl>
+			<dl>
+				<dt>购买须知:</dt>
+				<dd>购买用户暂不享受店内其他优惠</dd>
+				<dd>本单不含保险</dd>
+				<dd>本单不适宜心脏病、高血压及医生告知不适宜剧烈运动的疾病患者使用</dd>
+			</dl>
+			<dl>
+				<dt>使用时间:</dt>
+				<dd>09:30-20:30</dd>
+			</dl>
+			<ul>
+				<li><img src="img/aaf5387.png"/></li>
+				<li><img src="img/228ef0a.jpg"/></li>
+				<li><img src="img/165aa7c.png"/></li>
+				<li><img src="img/f8fb81d.jpg"/></li>
+				<li><img src="img/c7c04d9.jpg"/></li>
+			</ul>
+		</div>
+		<div class="buy">
+			<div class="buyBox">
+				<p>登录<span>+</span></p>
+				<form class="container-fluid">
+					<input class="form-control" type="text" placeholder="请输入手机号" />
+					<input class="form-control" type="text" placeholder="请输入验证码" />
+					<button class="btn">获取验证码</button>
+					<a href="#" class="btn">登录</a>
+				</form>
+			</div>
+		</div>
+		<script src="js/swiper.js"></script>
+		<script src="js/jquery-2.2.3.js"></script>
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				pagination: '.swiper-pagination',
+				paginationClickable: true,
+				autoplayDisableOnInteraction : false,
+				loop: true,
+				autoplay: 2500,
+			});
+		</script>
+		<script>
+			$(".product").children().eq(5).click(function(){
+				$(".product").children("dl").toggle();
+				if($(this).children().text()=="收起详情"){
+					$(this).children().text("查看详情");
+				}else{
+					$(this).children().text("收起详情");
+				}
+			})
+			$(".product p button").click(function(){
+				$(".buy").show();
+			})
+			$(".buy p span").click(function(){
+				$(".buy").hide();
+			})
+		</script>
+	</body>
+
+</html>

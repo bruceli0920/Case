@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的优惠券</title>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/paylist.css"/>
+		<script src="js/jquery-2.2.3.js"></script>
+	</head>
+	<body>
+		<nav class="container-fluid nav">
+			<div class="col-xs-6">可用卷</div>
+			<div class="col-xs-6">不可用</div>
+		</nav>
+		<div class="container-fluid main1">
+			<ul class="row">
+				<li class="col-lg-12">没有可用优惠券</li>
+			</ul>
+		</div>
+		<div class="container-fluid main2">
+			<ul class="row">
+				<li class="col-lg-12">没有优惠券</li>
+			</ul>
+		</div>	
+		<script type="text/javascript">
+			$(".nav>div:nth-child(2)").mouseover(function(){
+				$(".nav>div:nth-child(1)").css("border-bottom","2px solid #ddd")
+				$(".nav>div:nth-child(2)").css("border-bottom","2px solid #ec6d65")
+				$(".main1").css("display","none");
+				$(".main2").css("display","block");
+			})
+			$(".nav>div:nth-child(1)").mouseover(function(){
+				$(".nav>div:nth-child(2)").css("border-bottom","2px solid #ddd")
+				$(".nav>div:nth-child(1)").css("border-bottom","2px solid #ec6d65")
+				$(".main2").css("display","none");
+				$(".main1").css("display","block");
+			})
+		</script>
+	</body>
+</html>

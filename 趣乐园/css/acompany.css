@@ -1,0 +1,24 @@
+.row{
+	margin:0;
+}
+.col-xs-12{
+	padding:0;
+}
+.col-xs-6{
+	padding:0;
+}
+.col-xs-4{
+	padding:0;
+}
+.col-xs-3{
+	padding:0;
+}
+.part1{
+	margin:1em;
+}
+.part1 img,.part2 img,.part3 img{
+	width:100%;
+}
+.part3 img:nth-child(1),.part3 img:nth-child(3),.part3 img:nth-child(6),.part3 img:nth-child(8){
+	margin:1em 0;
+}

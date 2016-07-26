@@ -1,0 +1,193 @@
+body{
+	background:#eee;
+}
+.row{
+	background:#fff;
+}
+.a1{
+	display: block;
+}
+.a1 img{
+	width:100%;
+}
+.imgbb{
+	margin-top:3em;
+}
+.imgbb img{
+	width:100%;
+}
+.rowp p{
+	text-align: center;
+	color: #b8b7b9;
+	line-height: 30px;
+}
+.rowp{
+	height:30px;
+}
+.rowa a{
+	text-align: center;
+	color: #666;
+	text-decoration: underline;
+	line-height:10px;
+}
+.rowa{
+	height:30px;
+}
+.turn{
+	width:100%;
+	height:100%;
+	background:#fff;
+	position: fixed;
+	left: 100%;
+	top:0;
+	z-index: 10000;
+}
+h1{
+	text-align: center;
+	font-size: 20px;
+}
+.card{
+	border-top:1px solid #ccc;
+	overflow: hidden;
+}
+.card li{
+	height:40px;
+	border-bottom: 1px solid #ccc;
+	font-size: 15px;
+	line-height: 40px;
+	position: relative;
+}
+.card li span{
+	display: inline-block;
+	width:80px;
+	text-align: right;
+	color:#333;
+}
+.card li input{
+	border: none;
+	width:200px;
+	height:30px;
+	line-height: 30px;
+}
+.card li div{
+	display: block;
+	border: none;
+	width:50px;
+	height:30px;
+	text-align: center;
+	position: absolute;
+	right:20px;
+	top:5px;
+	background: #EC6D65;
+	color:#fff;
+	font-size:15px;
+	line-height: 30px;
+	border-radius:3px;
+	cursor:pointer;
+}
+.sc{
+	width:80%;
+	height:120px;
+	margin:20px 10%;
+	border:1px dotted #ccc;
+}
+.plus{
+	display: block;
+	margin:20px auto;
+	width:30px;
+	height:30px;
+	background: url(../img/plus.png) no-repeat;
+	background-size:cover;
+}
+.plusp{
+	text-align: center;
+	color:#000;
+}
+.btn1{
+	/*display: block;*/
+	border: none;
+	width:80%;
+	height:30px;
+	margin:20px 10%;
+	background: #EC6D65;
+	color:#fff;
+	font-size:15px;
+	text-align: center;
+	line-height: 30px;
+}
+.choose {
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+.choose .chooseBox {
+  width: 90%;
+  height: 400px;
+  padding-top: 15px;
+  margin: 50px auto;
+  border-radius: 5px;
+  background-color: white;
+  position: relative;
+}
+.choose .chooseBox ul {
+  width: 96%;
+  margin: 0 auto;
+  margin-top: -4px;
+  font-size: 12px;
+  border: 1px solid #ddd;
+  /*border-bottom: none;*/
+  height: 270px;
+  overflow-y: scroll;
+  background-color: #fff;
+  cursor: pointer;
+}
+.choose .chooseBox ul li {
+  line-height: 30px;
+  border-bottom: 1px solid #DDDDDD;
+}
+.choose .chooseBox p {
+  color: #EC6D65;
+  font-size: 15px;
+  line-height: 25px;
+  margin-left: 20px;
+  height: 25px;
+}
+.choose .chooseBox div {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.choose .chooseBox div input {
+  width: 70%;
+  line-height: 34px;
+  font-size: 18px;
+  position: absolute;
+  bottom: 10px;
+  left: 5%;
+}
+.choose .chooseBox div a {
+  display: block;
+  width: 15%;
+  height: 36px;
+  line-height: 36px;
+  background-color: #EC6D65;
+  color: white;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  right: 5%;
+}
+.choose > div > input:first-child {
+  width: 96%;
+  display: block;
+  margin: 0 auto;
+  line-height: 40px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}

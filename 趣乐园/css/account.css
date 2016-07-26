@@ -1,0 +1,113 @@
+
+.main{
+	background-color: #fff;
+	margin: 0;
+	margin-top: 5px;
+	padding: 0 1px;
+}
+.balance{
+	border: 1px solid #ddd;
+	margin: 0 2px;
+}
+.balance>div>span{
+	line-height: 34px;
+}
+.balance>div:nth-child(2){
+	text-align: center;
+	font-size: 40px;
+}
+.balance>div:nth-child(3) button{
+	float: right;
+	border-color: #EC6D65;
+	color: #EC6D65;
+	height: 30px;
+	padding: 5px 12px;
+}
+.nav{
+	margin: 0;
+}
+.nav div{
+	text-align: center;
+	line-height: 40px;
+	border-bottom: 1px solid #fff;
+}
+.nav div:nth-child(1){
+	border-bottom: 1px solid #EC6D65;
+	color: #EC6D65;
+}
+.navBox1{
+	border: 1px solid #ddd;
+	text-align: center;
+	color: #666;
+	line-height: 70px;
+	position: relative;
+	top: 0;
+	width: 100%;
+	margin: 0;
+}
+.navBox1>div{
+	font-size: 18px;
+}
+.navBox2{
+	border: 1px solid #ddd;
+	text-align: center;
+	color: #666;
+	position: relative;
+	top: 0;
+	width: 100%;
+	margin: 0;
+	background-color: #fff;
+	display: none;
+	
+}
+.navBox2>div{
+	color: #666;
+	line-height: 70px;
+	font-size: 18px;
+}
+.navBox2>div:nth-child(1),.navBox2>div:nth-child(2),.navBox2>div:nth-child(3){
+	text-align: center;
+	line-height: 35px;
+	font-size: 14px;
+}
+.dataBox{
+	position: relative;
+}
+.fixed {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  min-height: 600px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  z-index: 3;
+}
+.fixed .fixedBox {
+  width: 90%;
+  height: 200px;
+  margin: 20px 5%;
+  background-color: white;
+  border-radius: 10px;
+}
+.fixedBox p{
+	text-align: center;
+	margin-top: 15px;
+	font-size: 18px;
+}
+.fixed .fixedBox input[type="text"] {
+  width: 97%;
+  margin: 10% 1.5% 5% 1.5%;
+  resize: none;
+  outline: none;
+  padding: 15px;
+  font-size: 16px;
+}
+.fixed .fixedBox input[type="submit"]{
+  background-color: #EC6D65;
+  color: white;
+  font-size: 18px;
+  width: 97%;
+  margin: 0 1.5%;
+  outline: none;
+}

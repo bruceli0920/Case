@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>乐享卡</title>
+		<link rel="stylesheet" type="text/css" href="css/enjoycard.css"/>
+		<script src="js/jquery-2.2.3.js"></script>
+	</head>
+	<body>
+		<div class="row" style="margin-top: 20px;">
+			<a class="col-xs-12 a1">
+				<img src="img/images/create.jpg"/>
+			</a>
+		</div>
+		<div class="row" style="margin-top:20px;">
+			<div class="col-xs-4"></div>
+			<div class="col-xs-4 imgbb"><img src="img/images/cry.jpg"/></div>
+			<div class="col-xs-4"></div>
+		</div>
+		<div class="row rowp">
+			<p class="col-xs-12">哎呀！您还没有购买乐享卡...</p>
+		</div>
+		<div class="row rowa">
+			<a href="#/park" id="red" class="col-xs-12">马上去购买</a>
+		</div>
+		<form class="turn container-fluid">
+			<div class="row">
+				<h1 class="col-xs-12">请正确填写以下信息</h1>
+			</div>
+			<ul class="row card">
+				<li class="col-xs-12">
+					<span>持卡人：</span>
+					<input type="text" placeholder="请输入持卡人姓名"/>
+				</li>
+				<li class="col-xs-12">
+					<span>联系电话：</span>
+					<input type="text" placeholder="请优先填写乐园卡绑定的电话"/>
+				</li>
+				<li class="col-xs-12">
+					<span>选择商家：</span>
+					<input type="text" id="chose" placeholder="请选择商家名称"/>
+					<div id="on">选 择</div>
+				</li>
+				<li class="col-xs-12">
+					<span>卡总次数：</span>
+					<input type="text" placeholder="请输入卡的总次数"/>
+				</li>
+				<li class="col-xs-12">
+					<span>剩余次数：</span>
+					<input type="text" placeholder="请输入卡的剩余次数"/>
+				</li>
+			</ul>
+			<div class="sc">
+				<a href="" class="plus"></a>
+				<p class="plusp">上传您的乐园卡正面照一张</p>
+			</div>
+			<div class="row">
+				<div class="col-xs-6">
+					<button type="reset" class="btn1" id="btn1">取消</button>
+				</div>
+				<div class="col-xs-6">
+					<button type="submit" class="btn1">提交</button>
+				</div>
+			</div>
+			<div class="choose">
+				<div class="chooseBox">
+					<input type="text" placeholder="请输入商家名称" />
+					<ul id="contentBox">
+						
+					</ul>
+					<p></p>
+					<div>
+						<input type="text" placeholder="请输入商家名称" />
+						<a>确定</a>
+					</div>
+				</div>
+			</div>
+		</form>
+		<script>
+			$(".a1").click(function(){
+				$(".turn").animate({"left":0},350);
+			})
+			$("#btn1").click(function(){
+				$(".turn").animate({"left":"100%"},350);
+			})
+			/*$("#on").click(function(){
+				$(".choose").show()
+			})*/
+			$.ajax({
+				type:"get",
+				url:"data/leyuan.json",
+				success:function(data){
+					for(var i=0;i<40;i++){
+						$("<li></li>").text(data.data[i].name).appendTo($("#contentBox"));
+					}
+				}
+			});
+			$("#on").click(function(){
+				$("#contentBox li").each(function(){
+					$(this).click(function(){
+						$(".chooseBox").children().eq(0).val(this.innerHTML);
+						$("#chose").val(this.innerHTML);
+						$(".choose").hide();
+					})
+				})
+				$(".choose").toggle();
+				$("#contentBox").children().each(function(){
+					$(this).show();
+				})
+				$(".chooseBox div input").val("");
+			})
+			$(".choose").click(function(e){
+				if(e.target==this){
+					$(".choose").hide()
+				}
+			})
+			$("#red").click(function(){
+				$(".navbottomul a").attr("class"," ");
+				$(".navbottomul a").eq(1).attr("class","ttt");
+			})
+		</script>
+	</body>
+</html>
+ 
