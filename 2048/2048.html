@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> new document </title>
+  <meta charset="utf-8"/>
+  <style>
+	#gridPanel{
+		/*宽x高： 480x480*/
+		width:480px; height:480px;
+		/*水平居中*/
+		margin:0 auto;
+		/*背景色：#BBADA0*/
+		background-color:#bbada0;
+		/*边角圆弧：10px*/
+		border-radius:10px;
+		/*内边距：上20，左20*/
+		padding:20px 0 0 20px;
+		/*作为父元素定位*/
+		position:relative;
+	}
+	.grid,.cell{
+		width: 100px; height:100px;
+		border-radius:6px;
+	}
+	.grid{
+		background-color:#ccc0b3;
+		float:left;
+		margin:0 20px 20px 0;
+	}
+	.cell{
+		position:absolute;
+		text-align:center;
+		line-height:100px;
+		font-size:60px;
+		color:#776e65;
+	}
+	/*每行相同的top*/
+	#c00,#c01,#c02,#c03{top:20px}
+	#c10,#c11,#c12,#c13{top:140px}
+	#c20,#c21,#c22,#c23{top:260px}
+	#c30,#c31,#c32,#c33{top:380px}
+	/*每列相同的left*/
+	#c00,#c10,#c20,#c30{left:20px}
+	#c01,#c11,#c21,#c31{left:140px}
+	#c02,#c12,#c22,#c32{left:260px}
+	#c03,#c13,#c23,#c33{left:380px}
+
+	/*不同数字，定义不同背景颜色*/
+	.n2{background-color:#eee4da}
+	.n4{background-color:#ede0c8}
+	.n8{background-color:#f2b179;color:#fff}
+	.n16{background-color:#f59563;color:#fff}
+	.n32{background-color:#f67c5f;color:#fff}
+	.n64{background-color:#f65e3b;color:#fff}
+	.n128{background-color:#edcf72;color:#fff}
+	.n256{background-color:#edcc61;color:#fff}
+	.n512{background-color:#9c0;color:#fff}
+	.n1024{background-color:#33b5e5;color:#fff;
+		font-size:40px;}
+	.n2048{background-color:#09c;color:#fff;
+		font-size:40px;}
+	.n4096{background-color:#a6c;color:#fff;
+		font-size:40px;}
+	.n8192{background-color:#93c;color:#fff;
+		font-size:40px;}
+	p{font-family:Arial; font-weight:bold;
+	  width:480px; margin:0 auto;
+	  font-size:40px; padding-top:15px}
+
+	  /*gameOver的样式*/
+	  #gameOver{display:none; position:absolute; width:100%;height:100%;
+		top:0;left:0;
+	  }
+	  #gameOver div{width:100%;height:100%;
+		background-color:#555;
+		opacity:0.5;
+	  }
+	  #gameOver p{position:absolute; border-radius:10px;
+		top:200px; left:35%;
+		width:300px; height:200px; 
+		border:1px solid #edcf72;
+		background-color:#fff;
+		line-height:1.6em;
+		text-align:center;
+	  }
+	  .button{padding:10px; background-color:#9f8b77;
+		border-radius:6px; color:#fff; cursor:pointer;
+	  }
+  </style>
+  <script src="2048.js"></script>
+ </head>
+ <body>
+	<p>Score:<span id="score">0</span></p>
+	<div id="gridPanel">
+		<!--背景单元格-->
+		<div class="grid"></div>
+		<div class="grid"></div>
+		<div class="grid"></div>
+		<div class="grid"></div>
+
+		<div class="grid"></div>
+		<div class="grid"></div>
+		<div class="grid"></div>
+		<div class="grid"></div>
+
+		<div class="grid"></div>
+		<div class="grid"></div>
+		<div class="grid"></div>
+		<div class="grid"></div>
+
+		<div class="grid"></div>
+		<div class="grid"></div>
+		<div class="grid"></div>
+		<div class="grid"></div>
+
+		<!--前景单元格-->
+		<div id="c00" class="cell"></div>
+		<div id="c01" class="cell"></div>
+		<div id="c02" class="cell"></div>
+		<div id="c03" class="cell"></div>
+
+		<div id="c10" class="cell"></div>
+		<div id="c11" class="cell"></div>
+		<div id="c12" class="cell"></div>
+		<div id="c13" class="cell"></div>
+
+		<div id="c20" class="cell"></div>
+		<div id="c21" class="cell"></div>
+		<div id="c22" class="cell"></div>
+		<div id="c23" class="cell"></div>
+
+		<div id="c30" class="cell"></div>
+		<div id="c31" class="cell"></div>
+		<div id="c32" class="cell"></div>
+		<div id="c33" class="cell"></div>
+	</div>
+
+	<div id="gameOver">
+		<div><!--背景--></div>
+		<p><!--前景-->Game Over!<br>
+			Score:<span id="finalScore">0</span><br>
+			<a class="button" id="restart" onclick="game.start()">Try again!</a>
+		</p>
+	</div>
+
+	<script>/*专门调用game对象的方法*/
+		game.start();
+		/*为网页绑定键盘事件的处理函数*/
+		document.onkeydown=function(){
+			//只有游戏运行状态下，才响应按键事件
+			if(game.state==game.RUNNING){
+			/*event对象*/
+			var event=window.event||arguments[0];
+			if(event.keyCode==37){//向左箭头
+				game.moveLeft();
+			}else if(event.keyCode==39){//向右箭头
+				game.moveRight();
+			}else if(event.keyCode==38){//向上箭头
+				game.moveUp();
+			}else if(event.keyCode==40){//向下箭头
+				game.moveDown();
+			}
+			}
+		}
+	</script>
+ </body>
+</html>
