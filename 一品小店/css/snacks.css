@@ -1,0 +1,55 @@
+body{
+	font-size:16px;
+}
+.header{
+	height:44px;
+	background: #FF9933;
+}
+.header h4{
+	color:#FFFFFF;
+	margin-top:12px;
+	font-size:22px;
+}
+.header a{
+	color:#fff;
+	line-height: 44px;
+	font-size:20px;
+}
+.floor{
+	height:120px;
+	border-bottom:1px solid #ff9900;;
+}
+.imgfd{
+	width:95%;
+	vertical-align: middle;
+	margin-top:5px;
+}
+.cake{
+	margin-top:10px;
+}
+.cake p{
+	margin-bottom:10px;
+}
+.cake p span{
+	color:#ff9900;
+}
+.buy{
+	width: 65px;
+    height: 20px;
+    background: #FF9900;
+    border-radius: 8px;
+    display: block;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    font-size: 14px;
+    float: left;
+}
+.buy a{
+	color:#fff;
+}
+.col-xs-5{
+    width: 130px;
+    height: 150px;
+    display: table-cell;
+}

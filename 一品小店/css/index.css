@@ -1,0 +1,252 @@
+.header{
+	height:44px;
+	background: #FF9933;
+}
+.header h4{
+	color:#FFFFFF;
+	margin-top:12px;
+}
+.input1{
+	width:120px;
+	height:30px;
+	float: left;
+	margin-top:7px;
+}
+.btn1{
+	height:30px;
+	margin-top:7px;
+	color: #FF9933;
+	line-height:0;
+}
+.btn1:focus{
+	background:#FFFFFF;
+}
+.mainbox{
+	width:100%;
+	height:100%;
+	position: absolute;
+    top: 45px;
+    bottom: 50px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+.slideBox{ 
+	position:relative;
+	overflow:hidden;
+}
+.slideBox .hd ul{
+	width:75px;
+	z-index:1;
+	left:0;
+	bottom:0;
+	right:0;
+	margin: 0 auto 15px auto;
+	position:absolute;}
+.slideBox .hd li{ 
+	display:block; 
+	width:10px; 
+	text-indent:-9999px;
+	height:10px;
+	float:left;
+	border-radius:100% ;
+	background:#fff; 
+	margin-left: 5px;
+}
+.slideBox .hd li.on{ 
+	background:red;  
+}
+.slideBox .bd{ 
+	position:relative;
+}
+.slideBox .bd li{ 
+	position:relative; 
+	text-align:center;  
+	display: table-cell;
+}
+.slideBox .bd li img{  
+	vertical-align:top; 
+	width:100%;
+	display:block;
+}
+.slideBox .bd li a{ 
+	-webkit-tap-highlight-color:rgba(0,0,0,0);  
+}
+.ul1 li{
+	margin-top:10px;
+}
+.bg1{
+	display: block;
+	width:50px;
+	height:50px;
+	margin:0 auto;
+	background: url(../img/leftlist-01.png) no-repeat center center;
+}
+.bg2{
+	display: block;
+	width:50px;
+	height:50px;
+	margin:0 auto;
+	background: url(../img/leftlist-02.png) no-repeat center center;
+}
+.bg3{
+	display: block;
+	width:50px;
+	height:50px;
+	margin:0 auto;
+	background: url(../img/leftlist-03.png) no-repeat center center;
+}
+.bg4{
+	display: block;
+	width:50px;
+	height:50px;
+	margin:0 auto;
+	background: url(../img/leftlist-04.png) no-repeat center center;
+}
+.bg5{
+	display: block;
+	width:50px;
+	height:50px;
+	margin:0 auto;
+	background: url(../img/leftlist-05.png) no-repeat center center;
+}
+.bg6{
+	display: block;
+	width:50px;
+	height:50px;
+	margin:0 auto;
+	background: url(../img/leftlist-06.png) no-repeat center center;
+}
+.bg7{
+	display: block;
+	width:50px;
+	height:50px;
+	margin:0 auto;
+	background: url(../img/leftlist-07.png) no-repeat center center;
+}
+.bg8{
+	display: block;
+	width:50px;
+	height:50px;
+	margin:0 auto;
+	background: url(../img/leftlist-08.png) no-repeat center center;
+	background-size:50%;
+}
+.a1{
+	display: block;
+	width:100%;
+	margin-top:5px;
+	color:#000;
+	text-align: center;
+}
+.news{
+    height: 40px;
+    background:#EFECEA;
+    overflow: hidden;
+    line-height: 40px;
+}
+.newsleft{
+	border-right:1px solid #c0c0c0;
+    color: #FF0000;
+    font-size: 14px;
+}
+.newsleft b{
+	font-size: 18px;
+    font-weight: bold;
+    margin: 0 5px 0 0;
+}
+.gotxtbox{
+	height:40px;
+	overflow: hidden;
+}
+.gotxt{
+	height:160px;
+}
+.gotxt li{
+	width:100%;
+	height:40px;
+	color:#000;
+}
+.gotxt li span{
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    margin-right: 8px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    color: #FF0000;
+    border: 1px solid #8C8C8C;
+}
+.img1{
+	padding-top: 10px;
+	display: block;
+	width:100%;
+}
+.img2{
+	width:100%;
+}
+.nuo h4{
+	font-size:18px;
+}
+.nuo p{
+	font-size:12px;
+}
+.sort img{
+	width:100%;
+}
+.sort p{
+    font-size: 14px;
+    color: #000000;
+    margin-top: 10px;
+    text-align: center;
+}
+.righta{
+    color: #FF6600;
+    font-size: 12px;
+    float: right;
+}
+.jk img{
+	width:100%;
+}
+.jk p{
+	text-align: center;
+	color:#000;
+	font-size:14px;
+	margin-top:10px;
+}
+.jk p span{
+	color:#f00;
+}
+.jk p a{
+    width: 50px;
+    height: 20px;
+    color: #fff;
+    background: #FF9900;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 20px;
+    display: inline-block;
+    margin: 0 5px;
+}
+.jk p:last-child{
+	margin-bottom:10px;
+}
+.navbottom{
+	background:#FF9933;
+	height:50px;
+}
+.navbottomul{
+	margin-top:5px;
+}
+.navbottomul li{
+	text-align: center;
+}
+.navbottomul li a{
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: inline-block;
+}
+.navbottom li .choose{
+	color:darkcyan;
+}

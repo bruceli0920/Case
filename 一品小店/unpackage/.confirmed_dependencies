@@ -1,0 +1,128 @@
+{
+	"index.html": {
+		"resources": [
+			"img/shou-xiu-02.jpg",
+			"img/shou-xiu-03.jpg",
+			"img/leftlist-06.png",
+			"img/shou-chao-06.jpg",
+			"img/shou-jin-02.jpg",
+			"img/shou-jin-05.jpg",
+			"img/shou-jin-03.jpg",
+			"fonts/glyphicons-halflings-regular.woff2",
+			"img/shou-chao-05.jpg",
+			"css/index.css",
+			"css/bootstrap.css",
+			"img/banner.jpg",
+			"img/leftlist-01.png",
+			"js/jquery-2.2.3.js",
+			"img/shou-chao-04.jpg",
+			"img/leftlist-03.png",
+			"img/shou-chao-02.jpg",
+			"img/leftlist-08.png",
+			"img/shou-chao-03.jpg",
+			"img/shou-jin-04.jpg",
+			"img/leftlist-07.png",
+			"js/bootstrap.js",
+			"img/leftlist-05.png",
+			"img/leftlist-04.png",
+			"js/TouchSlide.1.1.js",
+			"css/reset.css",
+			"img/leftlist-02.png",
+			"limit.html",
+			"mine.html",
+			"chocolate.html",
+			"snacks.html",
+			"img/banner4.jpg",
+			"img/banner3.jpg",
+			"img/banner1.jpg",
+			"img/banner2.jpg"
+		],
+		"refer": [
+			"limit.html",
+			"mine.html",
+			"chocolate.html",
+			"snacks.html"
+		]
+	},
+	"limit.html": {
+		"resources": [
+			"img/shizhong.png",
+			"img/shou-jin-01.jpg",
+			"mine.html",
+			"css/limit.css",
+			"img/shou-jin-06.jpg",
+			"index.html",
+			"img/shou-jin-04.jpg",
+			"img/shou-jin-02.jpg",
+			"img/shou-jin-05.jpg",
+			"img/shou-jin-03.jpg",
+			"img/shou-xiu-01.jpg",
+			"img/shou-xiu-06.jpg",
+			"img/shou-xiu-07.jpg",
+			"img/shou-xiu-08.jpg",
+			"img/shou-xiu-05.jpg",
+			"img/shou-xiu-04.jpg"
+		],
+		"refer": [
+			"mine.html",
+			"index.html"
+		]
+	},
+	"mine.html": {
+		"resources": [
+			"img/logo_weixin.png",
+			"css/mine.css",
+			"img/logo_qq.png",
+			"img/logo_weibo.png",
+			"index.html",
+			"limit.html",
+			"fonts/glyphicons-halflings-regular.woff2",
+			"css/bootstrap.css",
+			"js/bootstrap.js",
+			"js/jquery-2.2.3.js",
+			"css/reset.css"
+		],
+		"refer": [
+			"index.html",
+			"limit.html"
+		]
+	},
+	"chocolate.html": {
+		"resources": [
+			"css/chocolate.css"
+		],
+		"refer": []
+	},
+	"buy.html": {
+		"resources": [
+			"css/buy.css",
+			"img/shou-jin-08.jpg",
+			"img/shopCar_06.jpg",
+			"fonts/glyphicons-halflings-regular.woff2",
+			"img/shou-xiu-02.jpg",
+			"css/bootstrap.css",
+			"js/bootstrap.js",
+			"js/jquery-2.2.3.js",
+			"css/reset.css",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"snacks.html": {
+		"resources": [
+			"fonts/glyphicons-halflings-regular.woff2",
+			"img/shou-jin-01.jpg",
+			"css/bootstrap.css",
+			"css/snacks.css",
+			"img/shou-jin-04.jpg",
+			"img/shou-jin-02.jpg",
+			"js/bootstrap.js",
+			"js/jquery-2.2.3.js",
+			"img/shou-jin-05.jpg",
+			"img/shou-jin-03.jpg",
+			"css/reset.css"
+		]
+	}
+}
