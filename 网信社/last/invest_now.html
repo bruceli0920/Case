@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>立马投资</title>
+    <link href="css/base.css" rel="stylesheet" type="text/css"/>
+    <link href="css/invest.css" rel="stylesheet" type="text/css"/>
+    <link href="css/baguettebox.min.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/baguettebox.min.js"></script>
+    <script type="text/javascript" src="js/yun.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$(".tab_con tr:even").css("background-color","#f1f1f1");
+			$(".tab_con tr:odd").css("background-color","#fbfbfb");
+			
+			$(".invest_below_top span").click(function () {
+				$(this).addClass("now").siblings().removeClass("now");
+				$i = $(this).index();
+				$(".invest_below_main").hide();
+				$(".invest_below_main").eq($i).show();
+			});
+			
+		})
+	</script>
+</head>
+<body>
+<!--导航部分-->
+<div id="header_link">
+    <div class="wrap">
+        <ul class="lt_ul">
+            <li class="tel"><i></i><a>全国理财热线：400-6000-534</a></li>
+            <li class="time"><i></i><a>服务时间:9：00-21：00</a></li>
+        </ul>
+        <ul class="rt_ul">
+            <li><a href="register.html" target="_blank">免费注册</a><span>|</span></li>
+            <li><a href="login.html" target="_blank">立即登录</a><span>|</span></li>
+            <li><a href="helper.html" target="_blank">帮助中心</a><span>|</span></li>
+            <li><a href="#">利息计算</a><span>|</span></li>
+            <li><a href="#">器备付金</a></li>
+        </ul>
+    </div>
+</div>
+<!--主导航部分-->
+<div class="navi_bg">
+    <div id="navi" class="wrap">
+        <div id="logo"></div>
+        <ul>
+            <li class="current"><a href="#">首&nbsp;&nbsp;页</a></li>
+            <li><a href="invest.html" target="_blank">我要投资</a></li>
+            <li><a href="我要借款.html" target="_blank">我要借款</a></li>
+            <li><a href="safety.html" target="_blank">安全保障</a></li>
+            <li><a href="about.html" target="_blank">关于我们</a></li>
+            <li><a href="point_index.html" target="_blank">积分商城</a></li>
+            <li><a href="#">我的账户</a></li>
+        </ul>
+    </div>
+</div>
+    <div class="main">
+        <div class="crumbs"><a href="index.html">首页</a> &gt; 我要投资</div>
+        <!--invest_top-->
+        <div class="invest_top">
+            <div class="invest_top_l">
+            <h1><a href="">借款合同（范文）</a><span class="invest_t">抵</span>柚银资产-YY11021 ST-YY-20150817-11021</h1>
+            <ul class="invest_top_l_m">
+            <li><h2>年化利率：<span>9.00%</span></h2><p>还款方式：按月付息，到期还本保</p></li>
+            <li><h2>期限：<span>1.0个月</span></h2><p>障方式：100%本息保障</p></li>
+            <li><h2>总额：<span>50,000.00元</span></h2><p>开始时间：2015-08-18 14:00:00</p></li>
+            </ul>
+            <div class="invest_top_l_b">
+                <div class="invest_top_l_br">
+                    <p>剩余金额：5000元</p>
+                    <p>剩余时间：1天21小时44分钟36秒</p>
+                </div>
+                <p>投标人数：14人</p>
+                <div class="progress_w"><div class="progress fr"><span></span> 20%</div>投标进度：</div>
+            </div>
+            </div>
+            <div class="invest_top_r">
+            <h1>投资金额</h1>
+            <form action="" >
+            <p class="dl">账户余额 登录 后可见</p>
+            <div class="input_w"><span>元</span><input name="" type="text"></div>
+            <a href="javascript:;" class="btn">马上投资</a>
+            <p class="sm"><input name="" type="checkbox" checked="checked" value=""> 我已阅读并同意 <a href="">《借款协议》</a></p>
+            </form>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!--invest_below-->
+        <div class="invest_below">
+            <div class="invest_below_top">
+                <span class="now">项目信息</span><span>认证信息</span><span>相关文件</span><span>交易记录</span><span>还款计划</span><div class="clear"></div> 
+            </div>
+            <!--invest_below_main-01-->
+            <div class="invest_below_main" style="display:block">
+                <div class="invest_tab_list">
+                <img src="images/i_tab_01.jpg" class="fr">
+                <ul class="invest_ul_01">
+                    <li>来源机构：柚银资产</li>
+                    <li>融资需求方：上******</li>
+                    <li>区域位置：上海</li>
+                    <li>借款用途：企业资金流转</li>
+                    <li>还款来源：企业经营</li>
+                    <li>注册资金：人民币100,000,000元</li>
+                    <li>征信记录：良好</li>
+                    <li>往期还款记录：无逾期记录</li>
+                    <li>经营情况：企业效益较好</li>
+                    <li>涉诉情况：无法院执行和法院失信记录</li>
+                </ul>
+                <div class="clear"></div>
+                </div>
+                <div class="invest_tab_list">
+                <p>本项目为机构借款产品，借款用于企业流动资金补充。柚银资产管理有限公司通过石投金融网站平台融资，以满足其日常流动资金需求。柚银资产管理有限公司注册资本金一亿元，实力雄厚，主要从事各类债权转让、资产保全、资产收购、金融咨询等综合性金融服务。经调查显示，借款机构征信状况良好，企业效益较好，资产充足，还款能力良好。</p>
+                <p>石投金融本着客观、公正的原则，审核该项目的真实性、借款人的资产状况、企业运营情况以及担保措施等，挑选优质借款项目发布。</p>
+                <div class="clear"></div>
+                </div>
+                <div class="invest_tab_list">
+                <img src="images/i_tab_02.jpg" class="fr">
+                <h3>项目风险保障方案</h3>
+                <p>合作机构为其推荐的每一个项目提供100%本息保证，通过担保公司担保、债权回购、担保人连带保证等方式，对项目发生的风险进行全额赔付，以保障投资人的利益。</p>
+                <p>合作机构为其推荐的每一个项目，按照一定比例向石投金融缴纳保证金，为其推荐项目提供还款保证。在融资人未能及时还款的情况下，将即日启动保证金对投资人进行代偿。代偿后，合作机构会在规定期限内补足保证金，追偿催收债务人还款。石投金融努力提升合作机构缴纳的保证金额度，使得该措施可以覆盖更多的风险。</p>
+                <div class="clear"></div>
+                </div>
+                <div class="invest_tab_list">
+                <div class="tr">
+                    <h3>业务简介</h3>
+                    <p>上海柚银资产管理有限公司为企业推出各种业务产品，满足各类融资需要。柚银资产管理公司的风险控制部门对所有业务进行严格的审核，同时有完善的全程项目进度管理。石投金融在收到柚银资产管理公司提供的项目后，由独立的风控部门对该项目进行再次审核，通过交叉验证、数据核实、上门尽调等方式评估项目风险。在项目通过终审之后，才会在石投金融平台上向理财人发布。在项目满标之后，石头金融实时与柚银资产管理公司保持联系，了解项目情况，进行项目的贷后调查，确保理财人的资金回款安全流畅。</p>
+                </div>
+                <h3>风控措施简介</h3>
+                <img src="images/i_tab_03.jpg">
+                <div class="clear"></div>
+                </div>
+            </div>
+            <!--invest_below_main-02-->
+            <div class="invest_below_main">
+                <table cellpadding="0" cellspacing="0" class="tab_con">
+                    <tr>
+                        <th>审核项目</th>
+                        <th>状态</th>
+                        <th>通过时间</th>
+                    </tr>
+                    <tr>
+                        <td>营业执照认证</td>
+                        <td><img src="images/ico_y.png"></td>
+                        <td>2015-08-20</td>
+                    </tr>
+                    <tr>
+                        <td>财务报表</td>
+                        <td><img src="images/ico_y.png"></td>
+                        <td>2015-08-20</td>
+                    </tr>
+                    <tr>
+                        <td>组织机构代码证</td>
+                        <td><img src="images/ico_y.png"></td>
+                        <td>2015-08-20</td>
+                    </tr>
+                    <tr>
+                        <td>银行流水</td>
+                        <td><img src="images/ico_y.png"></td>
+                        <td>2015-08-20</td>
+                    </tr>
+                    <tr>
+                        <td>实地认证</td>
+                        <td><img src="images/ico_y.png"></td>
+                        <td>2015-08-20</td>
+                    </tr>
+                    <tr>
+                        <td>实地考察认证</td>
+                        <td><img src="images/ico_y.png"></td>
+                        <td>2015-08-20</td>
+                    </tr>
+                    <tr>
+                        <td>企业章程</td>
+                        <td><img src="images/ico_y.png"></td>
+                        <td>2015-08-20</td>
+                    </tr>
+                    <tr>
+                        <td>征信报告认证</td>
+                        <td><img src="images/ico_y.png"></td>
+                        <td>2015-08-20</td>
+                    </tr>
+                 </table>
+                 <img src="images/i_tab_04.jpg" class="tab_img_02">
+            </div>
+            <!--invest_below_main-03-->
+            <div class="invest_below_main">
+            <ul class="invest_img baguetteBoxOne gallery">
+                <li><a href="images/rz_img.jpg" data-caption="Golden Gate Bridge"><img src="images/rz_img.jpg"><p>营业执照</p></a></li>
+                <li><a href="images/rz_img.jpg"><img src="images/rz_img.jpg"><p>组织机构代码证</p></a></li>
+                <li><a href="images/rz_img.jpg"><img src="images/rz_img.jpg"><p>税务登记证</p></a></li>
+            </ul>
+            <div class="clear"></div>
+            </div>
+            <!--invest_below_main-04-->
+            <div class="invest_below_main">
+                <table cellpadding="0" cellspacing="0" class="tab_con_t">
+                    <tr>
+                        <th>投标人</th>
+                        <th>投标金额</th>
+                        <th>投标时间</th>
+                        <th>投资总额</th>
+                        <th>加入人次</th>
+                    </tr>
+                    <tr>
+                        <td>ne**</td>
+                        <td>500.00元</td>
+                        <td>2015-08-16 21:40</td>
+                        <td>500.00元</td>
+                        <td>1人次</td>
+                    </tr>
+                 </table>
+            </div>
+            <!--invest_below_main-05-->
+            <div class="invest_below_main">
+                <table cellpadding="0" cellspacing="0" class="tab_con_t">
+                    <tr>
+                        <th>序号</th>
+                        <th>还款时间</th>
+                        <th>应还本息</th>
+                        <th>应还本金</th>
+                        <th>应还利息</th>
+                    </tr>
+                    <tr>
+                        <td>01</td>
+                        <td>2015-09-20</td>
+                        <td>50.000.00</td>
+                        <td>50.000.00</td>
+                        <td>3.000.00</td>
+                    </tr>
+                 </table>
+            </div>
+        </div>
+    <div class="clear"></div>    
+    </div>
+<div id="footer">
+    <div class="wrap">
+        <div id="lt_footer">
+            <ul >
+                <li><a href="#">平台介绍</a><span>|</span></li>
+                <li><a href="#">安全保障</a><span>|</span></li>
+                <li><a href="#">我要投资</a><span>|</span></li>
+                <li><a href="#">帮助中心</a><span>|</span></li>
+                <li><a href="#">联系我们</a><span>|</span></li>
+                <li><a href="#">加入我们</a><span>|</span></li>
+                <li><a href="#">站长统计</a></li>
+            </ul>
+            <div id="care">
+                <p>关注我们</p>
+                <ul>
+                    <li class="list_one"><a href="javascript:void(0)"></a></li>
+                    <li class="list_two"><a href="javascript:void(0)"></a></li>
+                    <li class="list_thr"><a href="javascript:void(0)"></a></li>
+                    <li class="list_for"><a href="javascript:void(0)"></a><i><img src="images/wechating.png" width="60" height="60"/> </i></li>
+                </ul>
+            </div>
+            <p>Copyright&copy;2012-2014蒙ICP备14001998号-1内蒙古益合贷金融信息服务有限公司</p>
+        </div>
+        <div id="rt_footer">
+            <h1>400-998-7778</h1>
+            <p>(09:00-18:00)</p>
+            <h3>admin@bao.cn</h3>
+            <ul>
+                <li class="list_one"></li>
+                <li class="list_two"></li>
+                <li class="list_thr"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+	baguetteBox.run('.baguetteBoxOne', {
+    animation: 'fadeIn',});
+</script>
+
+</body>
+</html>

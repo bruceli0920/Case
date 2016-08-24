@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/yun.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <link href="css/base.css" rel="stylesheet" type="text/css"/>
+
+    <link href="css/index.css" rel="stylesheet" type="text/css"/>
+    <link href="css/swiper.min.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <!-------悬浮小窗------>
+    <div class="hover_win">
+        <ul id="index_hover">
+            <li>
+                <p><img src="images/wechat.png"/> </p>
+                <span></span>
+                <div id="chat" >
+                    <img src="images/wechating.png" width="90px"/>
+                    <a>微信公众号</a>
+                </div>
+            </li>
+            <li>
+                <span></span>
+                <p><img src="images/tencent.png" /></p>
+                <div id="tencent">
+                    <ul>
+                        <li><i></i><a href="javascript:void(0)">客服-囡囡</a></li>
+                        <li><i></i><a href="javascript:void(0)">客服-果果</a></li>
+                        <li><i></i><a href="javascript:void(0)">客服-优优</a></li>
+                        <li><i></i><a href="javascript:void(0)">客服-乐乐</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <span>理财计算器</span>
+                <p><img src="images/counter.png"/> </p>
+            </li>
+            <li id="returnup">
+                <p><img src="images/returnup.png"/> </p>
+            </li>
+        </ul>
+    </div>
+    <!--导航部分-->
+    <div id="header_link">
+        <div class="wrap">
+            <ul class="lt_ul">
+                <li class="tel"><i></i><a>全国理财热线：400-6000-534</a></li>
+                <li class="time"><i></i><a>服务时间:9：00-21：00</a></li>
+            </ul>
+            <ul class="rt_ul">
+                <li><a href="register.html" target="_blank">免费注册</a><span>|</span></li>
+                <li><a href="login.html" target="_blank">立即登录</a><span>|</span></li>
+                <li><a href="helper.html" target="_blank">帮助中心</a><span>|</span></li>
+                <li><a href="#">利息计算</a><span>|</span></li>
+                <li><a href="#">器备付金</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--主导航部分-->
+    <div class="navi_bg">
+    <div id="navi" class="wrap">
+        <div id="logo"></div>
+        <ul>
+            <li class="current"><a href="#">首&nbsp;&nbsp;页</a></li>
+            <li><a href="invest.html" target="_blank">我要投资</a></li>
+            <li><a href="我要借款.html" target="_blank">我要借款</a></li>
+            <li><a href="safety.html" target="_blank">安全保障</a></li>
+            <li><a href="about.html" target="_blank">关于我们</a></li>
+            <li><a href="point_index.html" target="_blank">积分商城</a></li>
+            <li><a href="#">我的账户</a></li>
+        </ul>    
+    </div>
+    </div>
+    <!--上面大图部分-->
+    <div id="prev_photo">
+        <div id="up_photo"></div>
+    </div>
+    <div id="next_photo">
+        <div id="dw_photo" class="wrap">
+            <ul class="up">
+                <li class="lt_notice"><a href="#">发表公告<span>|</span>2015年8月17日至20日产品发售预告</a></li>
+                <li class="rt_more"><a href="#">更多</a></li>
+            </ul>
+            <ul class="down">
+                <li class="lt_picture"></li>
+                <li class="md_picture"></li>
+                <li class="rt_picture"></li>
+            </ul>
+        </div>
+    </div>
+    <!--主内容区域-->
+    <div id="main_content" class="wrap">
+        <div class="cot_sec_one" >
+            <div class="sec_one_lt">
+                <span></span>
+                <ul>
+                    <li class="fir_li">
+                        <i></i>
+                        <h2>优势</h2>
+                        <p>随存随取，周期灵活，收益稳定</p>
+                    </li>
+                    <li class="sec_li">
+                        <i></i>
+                        <h2>结算方式</h2>
+                        <p>T+0结算转出，T+1提现(节假日不处理提现业务)</p>
+                    </li>
+                </ul>
+                <p>敬请期待</p>
+            </div>
+            <div class="sec_one_rt">
+                <i></i>
+                <div>
+                    <span></span>
+                    <p>累计交易金额<span>271900.00</span>亿元</p>
+                    <p>总待回收金额<span>271900.00</span>万元</p>
+                    <p>近期利率指数<span>12.00</span>亿元</p>
+                </div>
+                <ul>
+                    <li><a href="#"></a><span>1207.33</span>万元</li>
+                    <li><a href="#"></a><span>2660</span>笔</li>
+                </ul>
+            </div>
+        </div>
+        <div class="cot_sec_two">
+            <div class="sec_two_up">
+                <p>新手体验标</p>
+                <a href="new.html" target="_blank">新手指引</a>
+            </div>
+            <div class="sec_two_dw">
+                <p>柚音地产-YY11021 ST-YY-20150817-11021</p>
+                <ul>
+                    <li>
+                        <div>年利化率：<span>9.0%</span></div>
+                        <p>还款方式：按月付息，到期还本保</p>
+                    </li>
+                    <li>
+                        <div>期限：<span>1.0个月</span></div>
+                        <p>保障方式：100%本息保障</p>
+                    </li>
+                    <li>
+                        <div>总额：<span>50,000.00元</span></div>
+                        <p>开始时间：2015-08-18 14:00:00</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="practice"><a href="#">立即体验</a></div>
+        </div>
+        <div class="cot_sec_thr">
+            <div id="bg_finance"></div>
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                         <div class="sec_thr_up">
+                <p>柚音地产-YY11021 ST-YY-20150817-11021<i></i><b></b><span>99%</span></p>
+                <ul>
+                    <li>
+                        <div>年利化率：<span>9.0%</span></div>
+                        <p>还款方式：按月付息，到期还本保</p>
+                    </li>
+                    <li>
+                        <div>期限：<span>1.0个月</span></div>
+                        <p>保障方式：100%本息保障</p>
+                    </li>
+                    <li>
+                        <div>总额：<span>50,000.00元</span></div>
+                        <p>开始时间：2015-08-18 14:00:00</p>
+                    </li>
+                </ul>
+                <div class="bid_one"><a href="#">立即投标</a></div>
+            </div>
+                         <div class="sec_thr_up">
+                <p>柚音地产-YY11021 ST-YY-20150817-11021<i></i><b></b><span>99%</span></p>
+                <ul>
+                    <li>
+                        <div>年利化率：<span>9.0%</span></div>
+                        <p>还款方式：按月付息，到期还本保</p>
+                    </li>
+                    <li>
+                        <div>期限：<span>1.0个月</span></div>
+                        <p>保障方式：100%本息保障</p>
+                    </li>
+                    <li>
+                        <div>总额：<span>50,000.00</span></div>
+                        <p>开始时间：2015-08-18 14:00:00</p>
+                    </li>
+                </ul>
+                <div class="bid_one"><a href="#">立即投标</a></div>
+            </div>
+                         <div class="sec_thr_up">
+                <p>柚音地产-YY11021 ST-YY-20150817-11021<i></i><b></b><span>99%</span></p>
+                <ul>
+                    <li>
+                        <div>年利化率：<span>9.0%</span></div>
+                        <p>还款方式：按月付息，到期还本保</p>
+                    </li>
+                    <li>
+                        <div>期限：<span>1.0个月</span></div>
+                        <p>保障方式：100%本息保障</p>
+                    </li>
+                    <li>
+                        <div>总额：<span>50,000.00</span></div>
+                        <p>开始时间：2015-08-18 14:00:00</p>
+                    </li>
+                </ul>
+                <div class="bid_one"><a href="#">立即投标</a></div>
+            </div>
+                </div>
+                </div>
+                 <span class="upspan swiper-button-prev"></span>
+                 <span class="dwspan swiper-button-next"></span>
+            </div>
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                    direction : 'vertical',
+                    nextButton: '.swiper-button-prev',
+                    prevButton: '.swiper-button-next',
+                    slidesPerView: 1,
+                    paginationClickable: true,
+                    spaceBetween: 30,
+                    loop: true
+                });
+            </script>
+        </div>
+        <div class="cot_sec_thr" id="cot_sec_for">
+            <div id="bg_finance_two"></div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+            <div class="sec_thr_up">
+                <p>柚音地产-YY11021 ST-YY-20150817-11021<i></i><b></b><span>99%</span></p>
+                <ul>
+                    <li>
+                        <div>年利化率：<span>9.0%</span></div>
+                        <p>还款方式：按月付息，到期还本保</p>
+                    </li>
+                    <li>
+                        <div>期限：<span>1.0个月</span></div>
+                        <p>保障方式：100%本息保障</p>
+                    </li>
+                    <li>
+                        <div>总额：<span>50,000.00</span></div>
+                        <p>开始时间：2015-08-18 14:00:00</p>
+                    </li>
+                </ul>
+                <div class="bid_one"><a href="#">立即投标</a></div>
+            </div>
+            <div class="sec_thr_up">
+                <p>柚音地产-YY11021 ST-YY-20150817-11021<i></i><b></b><span>99%</span></p>
+                <ul>
+                    <li>
+                        <div>年利化率：<span>9.0%</span></div>
+                        <p>还款方式：按月付息，到期还本保</p>
+                    </li>
+                    <li>
+                        <div>期限：<span>1.0个月</span></div>
+                        <p>保障方式：100%本息保障</p>
+                    </li>
+                    <li>
+                        <div>总额：<span>50,000.00</span></div>
+                        <p>开始时间：2015-08-18 14:00:00</p>
+                    </li>
+                </ul>
+                <div class="bid_one"><a href="#">立即投标</a></div>
+            </div>
+            <div class="sec_thr_up">
+                <p>柚音地产-YY11021 ST-YY-20150817-11021<i></i><b></b><span>99%</span></p>
+                <ul>
+                    <li>
+                        <div>年利化率：<span>9.0%</span></div>
+                        <p>还款方式：按月付息，到期还本保</p>
+                    </li>
+                    <li>
+                        <div>期限：<span>1.0个月</span></div>
+                        <p>保障方式：100%本息保障</p>
+                    </li>
+                    <li>
+                        <div>总额：<span>50,000.00</span></div>
+                        <p>开始时间：2015-08-18 14:00:00</p>
+                    </li>
+                </ul>
+                <div class="bid_one"><a href="#">立即投标</a></div>
+            </div>
+
+                    </div>
+                </div>
+
+            <span class="dwspan swiper-button-prev"></span>
+            <span class="upspan swiper-button-next"></span>
+            </div>
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                    direction : 'vertical',
+                    nextButton: '.swiper-button-prev',
+                    prevButton: '.swiper-button-next',
+                    slidesPerView: 1,
+                    paginationClickable: true,
+                    spaceBetween: 30,
+                    loop: true
+                });
+            </script>
+        </div>
+    </div>
+    <!--下侧小图片-->
+    <div id="footer_photo">
+        <div></div>
+    </div>
+    <!--底部内容区域-->
+    <div id="footer_content" class="wrap">
+        <div class="ft_cot_up">
+            <div class="ft_cot">
+                <h2>网站公告</h2>
+                <a href="#">更多</a>
+                <ul>
+                    <li>2015年8月17日至8月20日产品发售预告</li>
+                    <li>关于网信设8月17日发售的产品延迟半小时下架的通知</li>
+                    <li>2015年8月17日至8月20日产品发售预告</li>
+                    <li>关于网信设8月17日发售的产品延迟半小时下架的通知</li>
+                    <li>2015年8月17日至8月20日产品发售预告</li>
+                    <li>关于网信设8月17日发售的产品延迟半小时下架的通知</li>
+                    <li>2015年8月17日至8月20日产品发售预告</li>
+                </ul>
+            </div>
+            <div class="ft_cot ft_cot_two">
+                <h2>媒体报道</h2>
+                <a href="#">更多</a>
+                <ul>
+                    <li>2015年8月17日至8月20日产品发售预告</li>
+                    <li>关于网信设8月17日发售的产品延迟半小时下架的通知</li>
+                    <li>2015年8月17日至8月20日产品发售预告</li>
+                    <li>关于网信设8月17日发售的产品延迟半小时下架的通知</li>
+                    <li>2015年8月17日至8月20日产品发售预告</li>
+                    <li>关于网信设8月17日发售的产品延迟半小时下架的通知</li>
+                    <li>2015年8月17日至8月20日产品发售预告</li>
+                </ul>
+            </div>
+            <div class="ft_content">
+                <h2>理财人排名</h2>
+
+                <ul class="ft_content_ul">
+                    <li class="current">当天投资排名</li>
+                    <li>当月投资排名</li>
+                    <li id="last_li">总投资排名</li>
+                </ul>
+
+                <div class="current">
+                    <ul>
+                        <li>天排名</li>
+                        <li>用户名</li>
+                        <li>投资金额</li>
+                    </ul>
+                    <ul>
+                        <li class="no_1"><i></i></li>
+                        <li>337*****</li>
+                        <li>￥19,269.00</li>
+                    </ul>
+                    <ul>
+                        <li class="no_1"><i></i></li>
+                        <li>437*****</li>
+                        <li>￥19,269.00</li>
+                    </ul>
+                    <ul>
+                        <li class="no_1"><i></i></li>
+                        <li>437*****</li>
+                        <li>￥19,269.00</li>
+                    </ul>
+                    <ul>
+                        <li>4</li>
+                        <li>437*****</li>
+                        <li>￥19,269.00</li>
+                    </ul>
+                    <ul>
+                        <li>5</li>
+                        <li>437*****</li>
+                        <li>￥19,269.00</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>月排名</li>
+                        <li>用户名</li>
+                        <li>投资金额</li>
+                    </ul>
+                    <ul>
+                        <li class="no_1"><i></i></li>
+                        <li>537*****</li>
+                        <li>￥19,269.00</li>
+                    </ul>
+                    <ul>
+                        <li class="no_1"><i></i></li>
+                        <li>437*****</li>
+                        <li>￥19,269.00</li>
+                    </ul>
+                    <ul>
+                        <li class="no_1"><i></i></li>
+                        <li>437*****</li>
+                        <li>￥19,269.00</li>
+                    </ul>
+                    <ul>
+                        <li>4</li>
+                        <li>437*****</li>
+                        <li>￥19,269.00</li>
+                    </ul>
+                    <ul>
+                        <li>5</li>
+                        <li>437*****</li>
+                        <li>￥19,269.00</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>总排名</li>
+                        <li>用户名</li>
+                        <li>投资金额</li>
+                    </ul>
+                    <ul>
+                        <li class="no_1"><i></i></li>
+                        <li>637*****</li>
+                        <li>￥19,269.00</li>
+                    </ul>
+                    <ul>
+                        <li class="no_1"><i></i></li>
+                        <li>437*****</li>
+                        <li>￥19,269.00</li>
+                    </ul>
+                    <ul>
+                        <li class="no_1"><i></i></li>
+                        <li>437*****</li>
+                        <li>￥19,269.00</li>
+                    </ul>
+                    <ul>
+                        <li>4</li>
+                        <li>437*****</li>
+                        <li>￥19,269.00</li>
+                    </ul>
+                    <ul>
+                        <li>5</li>
+                        <li>437*****</li>
+                        <li>￥19,269.00</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="ft_cot_md">
+            <h2>合作机构</h2>
+            <span class="lt_aspan"></span>
+            <div>
+                <ul>
+                    <li><a href="javascript:void(0)"><img src="images/01.png"/></a></li>
+                    <li><a href="javascript:void(0)"><img src="images/02.png"/></a></li>
+                    <li><a href="javascript:void(0)"><img src="images/03.png"/></a></li>
+                    <li><a href="javascript:void(0)"><img src="images/04.png"/></a></li>
+                    <li><a href="javascript:void(0)"><img src="images/05.png"/></a></li>
+                    <li><a href="javascript:void(0)"><img src="images/06.png"/></a></li>
+                    <li><a href="javascript:void(0)"><img src="images/07.png"/></a></li>
+                    <li><a href="javascript:void(0)"><img src="images/01.png"/></a></li>
+                    <li><a href="javascript:void(0)"><img src="images/02.png"/></a></li>
+                    <li><a href="javascript:void(0)"><img src="images/03.png"/></a></li>
+                    <li><a href="javascript:void(0)"><img src="images/04.png"/></a></li>
+                    <li><a href="javascript:void(0)"><img src="images/05.png"/></a></li>
+                    <li><a href="javascript:void(0)"><img src="images/06.png"/></a></li>
+                    <li><a href="javascript:void(0)"><img src="images/07.png"/></a></li>
+                </ul>
+            </div>
+            <span class="rt_aspan"></span>
+        </div>
+        <div class="ft_cot_dw">
+            <h2>友情链接</h2>
+            <ul>
+                <li><a href="#">网贷之家</a></li>
+                <li><a href="#">网贷天和</a></li>
+                <li><a href="#">网贷天眼</a></li>
+                <li><a href="#">网贷公社</a></li>
+                <li><a href="#">网贷中国</a></li>
+                <li><a href="#">网贷宝盒</a></li>
+                <li><a href="#">网贷之家</a></li>
+                <li><a href="#">网贷之家</a></li>
+                <li><a href="#">网贷之家</a></li>
+                <li><a href="#">网贷之家</a></li>
+                <li><a href="#">网贷之家</a></li>
+                <li><a href="#">网贷之家</a></li>
+                <li><a href="#">网贷之家</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--底部页脚-->
+    <div id="footer">
+        <div class="wrap">
+            <div id="lt_footer">
+                <ul >
+                    <li><a href="#">平台介绍</a><span>|</span></li>
+                    <li><a href="#">安全保障</a><span>|</span></li>
+                    <li><a href="#">我要投资</a><span>|</span></li>
+                    <li><a href="#">帮助中心</a><span>|</span></li>
+                    <li><a href="#">联系我们</a><span>|</span></li>
+                    <li><a href="#">加入我们</a><span>|</span></li>
+                    <li><a href="#">站长统计</a></li>
+                </ul>
+                <div id="care">
+                    <p>关注我们</p>
+                    <ul>
+                        <li class="list_one"><a href="javascript:void(0)"></a></li>
+                        <li class="list_two"><a href="javascript:void(0)"></a></li>
+                        <li class="list_thr"><a href="javascript:void(0)"></a></li>
+                        <li class="list_for"><a href="javascript:void(0)"></a><i><img src="images/wechating.png" width="60" height="60"/> </i></li>
+                    </ul>
+                </div>
+                <p>Copyright&copy;2012-2014蒙ICP备14001998号-1内蒙古益合贷金融信息服务有限公司</p>
+            </div>
+            <div id="rt_footer">
+                <h1>400-998-7778</h1>
+                <p>(09:00-18:00)</p>
+                <h3>admin@bao.cn</h3>
+                <ul>
+                    <li class="list_one"></li>
+                    <li class="list_two"></li>
+                    <li class="list_thr"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
